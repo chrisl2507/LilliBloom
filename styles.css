@@ -124,6 +124,20 @@ nav {
     z-index: 1001;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+}
+
 /* Hamburger Menu Button */
 .nav-toggle {
     display: block;
@@ -316,8 +330,8 @@ nav a:active {
 }
 
 .hero-logo {
-    max-width: min(300px, 80vw);
-    width: 100%;
+    width: min(600px, 95vw);
+    height: auto;
     margin-bottom: 2rem;
     opacity: 0;
     animation: fadeIn 1.5s ease forwards;
@@ -1602,7 +1616,7 @@ footer {
 
     /* Hero */
     .hero-logo {
-        max-width: 350px;
+        width: min(650px, 90vw);
         margin-bottom: 3rem;
     }
 
@@ -1718,7 +1732,7 @@ footer {
 
     /* Hero */
     .hero-logo {
-        max-width: 450px;
+        width: min(800px, 85vw);
     }
 
     /* About */
