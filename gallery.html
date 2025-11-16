@@ -3,390 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LilliBloom wedding floral gallery - View our portfolio of luxury bouquets, centerpieces, and ceremony installations.">
     <title>Gallery | LilliBloom | Luxury Wedding Florals</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo-text">LilliBloom</a>
-            <ul>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="index.html#testimonials">Reviews</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo-text">LilliBloom</a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <ul role="navigation">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#testimonials">Reviews</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Overlay for mobile menu -->
+<div class="nav-overlay" aria-hidden="true"></div>
+
+<!-- Gallery Hero -->
+<section class="gallery-hero">
+    <div class="section-subtitle">Our Portfolio</div>
+    <h1>A Showcase of Elegance</h1>
+    <p>
+        Browse our collection of bespoke wedding florals. Each arrangement represents our commitment to artistry, quality, and the unique vision of our clients.
+    </p>
+</section>
+
+<!-- Filter Section -->
+<section class="gallery-filters">
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="bouquets">Bridal Bouquets</button>
+        <button class="filter-btn" data-filter="centerpieces">Centerpieces</button>
+        <button class="filter-btn" data-filter="ceremony">Ceremony Decor</button>
+        <button class="filter-btn" data-filter="installations">Installations</button>
+        <button class="filter-btn" data-filter="personal">Personal Flowers</button>
+    </div>
+</section>
+
+<!-- Gallery Grid -->
+<section class="gallery-main">
+    <div class="gallery-container">
+        <div class="gallery-loading">
+            <p>Loading beautiful arrangements...</p>
         </div>
-    </nav>
 
-    <!-- Gallery Hero -->
-    <section class="gallery-hero">
-        <div class="section-subtitle">Our Portfolio</div>
-        <h1>A Showcase of Elegance</h1>
-        <p>
-            Browse our collection of bespoke wedding florals. Each arrangement represents our commitment to artistry, quality, and the unique vision of our clients.
-        </p>
-    </section>
-
-    <!-- Filter Section -->
-    <section class="gallery-filters">
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="bouquets">Bridal Bouquets</button>
-            <button class="filter-btn" data-filter="centerpieces">Centerpieces</button>
-            <button class="filter-btn" data-filter="ceremony">Ceremony Decor</button>
-            <button class="filter-btn" data-filter="installations">Installations</button>
-            <button class="filter-btn" data-filter="personal">Personal Flowers</button>
+        <div class="gallery-empty">
+            <p>No arrangements found in this category.</p>
         </div>
-    </section>
 
-    <!-- Gallery Grid -->
-    <section class="gallery-main">
-        <div class="gallery-container">
-            <div class="gallery-loading">
-                <p>Loading beautiful arrangements...</p>
-            </div>
-            
-            <div class="gallery-empty">
-                <p>No arrangements found in this category.</p>
-            </div>
-            
-            <div class="gallery-grid-masonry" id="galleryGrid">
-                <!-- REPLACE ALL IMAGES WITH YOUR ACTUAL WEDDING PHOTOS -->
-                <!-- Each item needs: src, alt, data-category, data-title -->
-                
-                <!-- Bouquets -->
-                <div class="gallery-item-masonry" data-category="bouquets" data-title="Romantic Rose Bouquet" data-description="Classic bridal bouquet">
-                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600" alt="Bridal bouquet with roses">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Romantic Rose Bouquet</div>
-                        <div class="gallery-item-category">Bridal Bouquets</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="bouquets" data-title="Garden-Style Bouquet" data-description="Whimsical mixed florals">
-                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600" alt="Garden style bouquet">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Garden-Style Bouquet</div>
-                        <div class="gallery-item-category">Bridal Bouquets</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="bouquets" data-title="Cascading Elegance" data-description="Dramatic cascading design">
-                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600" alt="Cascading bridal bouquet">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Cascading Elegance</div>
-                        <div class="gallery-item-category">Bridal Bouquets</div>
-                    </div>
-                </div>
-                
-                <!-- Centerpieces -->
-                <div class="gallery-item-masonry" data-category="centerpieces" data-title="Luxury Table Setting" data-description="Tall elegant centerpiece">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Luxury centerpiece">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Luxury Table Setting</div>
-                        <div class="gallery-item-category">Centerpieces</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="centerpieces" data-title="Intimate Arrangement" data-description="Low romantic centerpiece">
-                    <img src="https://images.unsplash.com/photo-1522057384400-681b421cfebc?w=600" alt="Low centerpiece arrangement">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Intimate Arrangement</div>
-                        <div class="gallery-item-category">Centerpieces</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="centerpieces" data-title="Gold & Cream Elegance" data-description="Sophisticated table decor">
-                    <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600" alt="Gold and cream centerpiece">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Gold & Cream Elegance</div>
-                        <div class="gallery-item-category">Centerpieces</div>
-                    </div>
-                </div>
-                
-                <!-- Ceremony -->
-                <div class="gallery-item-masonry" data-category="ceremony" data-title="Garden Ceremony Arch" data-description="Lush floral arch">
-                    <img src="https://images.unsplash.com/photo-1477873244327-f02d14a82eeb?w=600" alt="Wedding ceremony arch">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Garden Ceremony Arch</div>
-                        <div class="gallery-item-category">Ceremony Decor</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="ceremony" data-title="Minimalist Arch" data-description="Clean modern ceremony backdrop">
-                    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600" alt="Minimalist ceremony decor">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Minimalist Arch</div>
-                        <div class="gallery-item-category">Ceremony Decor</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="ceremony" data-title="Romantic Aisle Markers" data-description="Elegant aisle decorations">
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600" alt="Wedding aisle decorations">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Romantic Aisle Markers</div>
-                        <div class="gallery-item-category">Ceremony Decor</div>
-                    </div>
-                </div>
-                
-                <!-- Installations -->
-                <div class="gallery-item-masonry" data-category="installations" data-title="Grand Entrance Display" data-description="Statement entrance installation">
-                    <img src="https://images.unsplash.com/photo-1519167758481-83f29da8c43f?w=600" alt="Grand entrance florals">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Grand Entrance Display</div>
-                        <div class="gallery-item-category">Installations</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="installations" data-title="Sweetheart Table Backdrop" data-description="Luxurious backdrop design">
-                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600" alt="Sweetheart table backdrop">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Sweetheart Table Backdrop</div>
-                        <div class="gallery-item-category">Installations</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="installations" data-title="Hanging Installation" data-description="Dramatic ceiling florals">
-                    <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?w=600" alt="Hanging floral installation">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Hanging Installation</div>
-                        <div class="gallery-item-category">Installations</div>
-                    </div>
-                </div>
-                
-                <!-- Personal Flowers -->
-                <div class="gallery-item-masonry" data-category="personal" data-title="Boutonniere Collection" data-description="Elegant boutonnieres">
-                    <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=600" alt="Wedding boutonnieres">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Boutonniere Collection</div>
-                        <div class="gallery-item-category">Personal Flowers</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="personal" data-title="Floral Crown" data-description="Romantic headpiece">
-                    <img src="https://images.unsplash.com/photo-1515813062269-f5e4e13f4adf?w=600" alt="Floral crown">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Floral Crown</div>
-                        <div class="gallery-item-category">Personal Flowers</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="personal" data-title="Wrist Corsages" data-description="Delicate wrist florals">
-                    <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=600" alt="Wrist corsages">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Wrist Corsages</div>
-                        <div class="gallery-item-category">Personal Flowers</div>
-                    </div>
-                </div>
-                
-                <!-- Add more mixed items for variety -->
-                <div class="gallery-item-masonry" data-category="bouquets" data-title="Monochromatic Beauty" data-description="All-white sophistication">
-                    <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600" alt="White bridal bouquet">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Monochromatic Beauty</div>
-                        <div class="gallery-item-category">Bridal Bouquets</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="centerpieces" data-title="Rustic Romance" data-description="Natural elegant centerpiece">
-                    <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=600" alt="Rustic centerpiece">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Rustic Romance</div>
-                        <div class="gallery-item-category">Centerpieces</div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item-masonry" data-category="ceremony" data-title="Floral Hoop Wreath" data-description="Circular ceremony accent">
-                    <img src="https://images.unsplash.com/photo-1532798442725-41036acc7489?w=600" alt="Floral hoop">
-                    <div class="gallery-item-overlay">
-                        <div class="gallery-item-title">Floral Hoop Wreath</div>
-                        <div class="gallery-item-category">Ceremony Decor</div>
-                    </div>
+        <div class="gallery-grid-masonry" id="galleryGrid">
+            <!-- REPLACE ALL IMAGES WITH YOUR ACTUAL WEDDING PHOTOS -->
+            <!-- Each item needs: src, alt, data-category, data-title -->
+
+            <!-- Bouquets -->
+            <div class="gallery-item-masonry" data-category="bouquets" data-title="Romantic Rose Bouquet" data-description="Classic bridal bouquet">
+                <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600" alt="Bridal bouquet with roses">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Romantic Rose Bouquet</div>
+                    <div class="gallery-item-category">Bridal Bouquets</div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <button class="lightbox-close" id="lightboxClose">&times;</button>
-            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
-            <img src="" alt="" id="lightboxImage">
-            <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
-            <div class="lightbox-caption">
-                <h3 id="lightboxTitle"></h3>
-                <p id="lightboxCategory"></p>
+            <div class="gallery-item-masonry" data-category="bouquets" data-title="Garden-Style Bouquet" data-description="Whimsical mixed florals">
+                <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600" alt="Garden style bouquet">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Garden-Style Bouquet</div>
+                    <div class="gallery-item-category">Bridal Bouquets</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="bouquets" data-title="Cascading Elegance" data-description="Dramatic cascading design">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600" alt="Cascading bridal bouquet">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Cascading Elegance</div>
+                    <div class="gallery-item-category">Bridal Bouquets</div>
+                </div>
+            </div>
+
+            <!-- Centerpieces -->
+            <div class="gallery-item-masonry" data-category="centerpieces" data-title="Luxury Table Setting" data-description="Tall elegant centerpiece">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Luxury centerpiece">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Luxury Table Setting</div>
+                    <div class="gallery-item-category">Centerpieces</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="centerpieces" data-title="Intimate Arrangement" data-description="Low romantic centerpiece">
+                <img src="https://images.unsplash.com/photo-1522057384400-681b421cfebc?w=600" alt="Low centerpiece arrangement">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Intimate Arrangement</div>
+                    <div class="gallery-item-category">Centerpieces</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="centerpieces" data-title="Gold & Cream Elegance" data-description="Sophisticated table decor">
+                <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600" alt="Gold and cream centerpiece">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Gold & Cream Elegance</div>
+                    <div class="gallery-item-category">Centerpieces</div>
+                </div>
+            </div>
+
+            <!-- Ceremony -->
+            <div class="gallery-item-masonry" data-category="ceremony" data-title="Garden Ceremony Arch" data-description="Lush floral arch">
+                <img src="https://images.unsplash.com/photo-1477873244327-f02d14a82eeb?w=600" alt="Wedding ceremony arch">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Garden Ceremony Arch</div>
+                    <div class="gallery-item-category">Ceremony Decor</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="ceremony" data-title="Minimalist Arch" data-description="Clean modern ceremony backdrop">
+                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600" alt="Minimalist ceremony decor">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Minimalist Arch</div>
+                    <div class="gallery-item-category">Ceremony Decor</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="ceremony" data-title="Romantic Aisle Markers" data-description="Elegant aisle decorations">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600" alt="Wedding aisle decorations">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Romantic Aisle Markers</div>
+                    <div class="gallery-item-category">Ceremony Decor</div>
+                </div>
+            </div>
+
+            <!-- Installations -->
+            <div class="gallery-item-masonry" data-category="installations" data-title="Grand Entrance Display" data-description="Statement entrance installation">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f29da8c43f?w=600" alt="Grand entrance florals">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Grand Entrance Display</div>
+                    <div class="gallery-item-category">Installations</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="installations" data-title="Sweetheart Table Backdrop" data-description="Luxurious backdrop design">
+                <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600" alt="Sweetheart table backdrop">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Sweetheart Table Backdrop</div>
+                    <div class="gallery-item-category">Installations</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="installations" data-title="Hanging Installation" data-description="Dramatic ceiling florals">
+                <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?w=600" alt="Hanging floral installation">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Hanging Installation</div>
+                    <div class="gallery-item-category">Installations</div>
+                </div>
+            </div>
+
+            <!-- Personal Flowers -->
+            <div class="gallery-item-masonry" data-category="personal" data-title="Boutonniere Collection" data-description="Elegant boutonnieres">
+                <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=600" alt="Wedding boutonnieres">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Boutonniere Collection</div>
+                    <div class="gallery-item-category">Personal Flowers</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="personal" data-title="Floral Crown" data-description="Romantic headpiece">
+                <img src="https://images.unsplash.com/photo-1515813062269-f5e4e13f4adf?w=600" alt="Floral crown">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Floral Crown</div>
+                    <div class="gallery-item-category">Personal Flowers</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="personal" data-title="Wrist Corsages" data-description="Delicate wrist florals">
+                <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=600" alt="Wrist corsages">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Wrist Corsages</div>
+                    <div class="gallery-item-category">Personal Flowers</div>
+                </div>
+            </div>
+
+            <!-- Add more mixed items for variety -->
+            <div class="gallery-item-masonry" data-category="bouquets" data-title="Monochromatic Beauty" data-description="All-white sophistication">
+                <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600" alt="White bridal bouquet">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Monochromatic Beauty</div>
+                    <div class="gallery-item-category">Bridal Bouquets</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="centerpieces" data-title="Rustic Romance" data-description="Natural elegant centerpiece">
+                <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=600" alt="Rustic centerpiece">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Rustic Romance</div>
+                    <div class="gallery-item-category">Centerpieces</div>
+                </div>
+            </div>
+
+            <div class="gallery-item-masonry" data-category="ceremony" data-title="Floral Hoop Wreath" data-description="Circular ceremony accent">
+                <img src="https://images.unsplash.com/photo-1532798442725-41036acc7489?w=600" alt="Floral hoop">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Floral Hoop Wreath</div>
+                    <div class="gallery-item-category">Ceremony Decor</div>
+                </div>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="gallery-cta">
-        <div class="section-subtitle">Inspired?</div>
-        <h2>Let's Create Your Perfect Day</h2>
-        <p>
-            Every arrangement you see here was crafted with love and attention to detail. Your wedding deserves the same care. Let's discuss how we can bring your floral dreams to life.
-        </p>
-        <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">LilliBloom</div>
-            <div class="footer-social">
-                <a href="#">Instagram</a>
-                <a href="#">Pinterest</a>
-                <a href="#">Facebook</a>
-            </div>
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+        <img src="" alt="" id="lightboxImage">
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+        <div class="lightbox-caption">
+            <h3 id="lightboxTitle"></h3>
+            <p id="lightboxCategory"></p>
         </div>
-    </footer>
+    </div>
+</div>
 
-    <!-- JavaScript -->
-    <script>
-        // Gallery Filtering
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const galleryItems = document.querySelectorAll('.gallery-item-masonry');
-        const emptyState = document.querySelector('.gallery-empty');
-        
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                button.classList.add('active');
-                
-                const filterValue = button.getAttribute('data-filter');
-                let visibleCount = 0;
-                
-                galleryItems.forEach(item => {
-                    const itemCategory = item.getAttribute('data-category');
-                    
-                    if (filterValue === 'all' || itemCategory === filterValue) {
-                        item.classList.remove('hidden');
-                        visibleCount++;
-                    } else {
-                        item.classList.add('hidden');
-                    }
-                });
-                
-                // Show/hide empty state
-                if (visibleCount === 0) {
-                    emptyState.classList.add('active');
+<!-- CTA Section -->
+<section class="gallery-cta">
+    <div class="section-subtitle">Inspired?</div>
+    <h2>Let's Create Your Perfect Day</h2>
+    <p>
+        Every arrangement you see here was crafted with love and attention to detail. Your wedding deserves the same care. Let's discuss how we can bring your floral dreams to life.
+    </p>
+    <a href="index.html#contact" class="btn-primary">Book Your Consultation</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">LilliBloom</div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="navigation.js"></script>
+<script>
+    // Gallery Filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item-masonry');
+    const emptyState = document.querySelector('.gallery-empty');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+            let visibleCount = 0;
+
+            galleryItems.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+
+                if (filterValue === 'all' || itemCategory === filterValue) {
+                    item.classList.remove('hidden');
+                    visibleCount++;
                 } else {
-                    emptyState.classList.remove('active');
+                    item.classList.add('hidden');
                 }
             });
-        });
-        
-        // Lightbox Functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImage = document.getElementById('lightboxImage');
-        const lightboxTitle = document.getElementById('lightboxTitle');
-        const lightboxCategory = document.getElementById('lightboxCategory');
-        const lightboxClose = document.getElementById('lightboxClose');
-        const lightboxPrev = document.getElementById('lightboxPrev');
-        const lightboxNext = document.getElementById('lightboxNext');
-        
-        let currentImageIndex = 0;
-        let visibleImages = [];
-        
-        // Function to update visible images array
-        function updateVisibleImages() {
-            visibleImages = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
-        }
-        
-        // Open lightbox
-        galleryItems.forEach((item, index) => {
-            item.addEventListener('click', () => {
-                updateVisibleImages();
-                currentImageIndex = visibleImages.indexOf(item);
-                showLightboxImage(currentImageIndex);
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-        
-        // Show image in lightbox
-        function showLightboxImage(index) {
-            if (index < 0) index = visibleImages.length - 1;
-            if (index >= visibleImages.length) index = 0;
-            
-            currentImageIndex = index;
-            const item = visibleImages[index];
-            const img = item.querySelector('img');
-            const title = item.getAttribute('data-title');
-            const category = item.querySelector('.gallery-item-category').textContent;
-            
-            lightboxImage.src = img.src;
-            lightboxImage.alt = img.alt;
-            lightboxTitle.textContent = title;
-            lightboxCategory.textContent = category;
-        }
-        
-        // Close lightbox
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-        
-        lightboxClose.addEventListener('click', closeLightbox);
-        
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
+
+            // Show/hide empty state
+            if (visibleCount === 0) {
+                emptyState.classList.add('active');
+            } else {
+                emptyState.classList.remove('active');
             }
         });
-        
-        // Navigate lightbox
-        lightboxPrev.addEventListener('click', (e) => {
-            e.stopPropagation();
+    });
+
+    // Lightbox Functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxCategory = document.getElementById('lightboxCategory');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let currentImageIndex = 0;
+    let visibleImages = [];
+
+    // Function to update visible images array
+    function updateVisibleImages() {
+        visibleImages = Array.from(galleryItems).filter(item => !item.classList.contains('hidden'));
+    }
+
+    // Open lightbox
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            updateVisibleImages();
+            currentImageIndex = visibleImages.indexOf(item);
+            showLightboxImage(currentImageIndex);
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Show image in lightbox
+    function showLightboxImage(index) {
+        if (index < 0) index = visibleImages.length - 1;
+        if (index >= visibleImages.length) index = 0;
+
+        currentImageIndex = index;
+        const item = visibleImages[index];
+        const img = item.querySelector('img');
+        const title = item.getAttribute('data-title');
+        const category = item.querySelector('.gallery-item-category').textContent;
+
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightboxTitle.textContent = title;
+        lightboxCategory.textContent = category;
+    }
+
+    // Close lightbox
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Navigate lightbox
+    lightboxPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showLightboxImage(currentImageIndex - 1);
+    });
+
+    lightboxNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showLightboxImage(currentImageIndex + 1);
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+
+        if (e.key === 'Escape') {
+            closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
             showLightboxImage(currentImageIndex - 1);
-        });
-        
-        lightboxNext.addEventListener('click', (e) => {
-            e.stopPropagation();
+        } else if (e.key === 'ArrowRight') {
             showLightboxImage(currentImageIndex + 1);
-        });
-        
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (!lightbox.classList.contains('active')) return;
-            
-            if (e.key === 'Escape') {
-                closeLightbox();
-            } else if (e.key === 'ArrowLeft') {
-                showLightboxImage(currentImageIndex - 1);
-            } else if (e.key === 'ArrowRight') {
-                showLightboxImage(currentImageIndex + 1);
-            }
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
+        }
+    });
+</script>
 </body>
 </html>
