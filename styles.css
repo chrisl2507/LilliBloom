@@ -952,6 +952,371 @@ footer {
 }
 
 /* ========================================
+   ABOUT PAGE SPECIFIC
+   ======================================== */
+.about-hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cream);
+    padding: 6rem 5% 3rem;
+    margin-top: 60px;
+}
+
+.about-hero p {
+    max-width: 700px;
+    font-size: var(--text-base);
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+/* Origin Story */
+.about-origin {
+    background-color: var(--white);
+}
+
+.origin-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.origin-text p {
+    margin-bottom: 1.5rem;
+}
+
+.origin-image {
+    position: relative;
+    padding-bottom: 100%;
+    background-color: var(--beige);
+    width: 100%;
+}
+
+.origin-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Team Section */
+.about-team {
+    background-color: var(--cream);
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.team-photo {
+    position: relative;
+    padding-bottom: 100%;
+    background-color: var(--beige);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.team-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info h3 {
+    font-size: var(--text-xl);
+    margin-bottom: 0.5rem;
+}
+
+.team-role {
+    color: var(--gold);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.team-info p {
+    margin-bottom: 1.5rem;
+}
+
+/* Why Artificial Section */
+.about-why {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.why-content h2 {
+    margin-bottom: 3rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: left;
+}
+
+.why-item {
+    padding: 2rem;
+    background-color: var(--cream);
+}
+
+.why-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--gold);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.why-item h4 {
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.why-item p {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+}
+
+/* What Makes Us Different */
+.about-difference {
+    background-color: var(--cream);
+}
+
+.difference-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.difference-item {
+    padding: 2.5rem;
+    background-color: var(--white);
+}
+
+.difference-item h3 {
+    font-size: var(--text-lg);
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.difference-item p {
+    line-height: 1.8;
+}
+
+/* Service Area */
+.about-service {
+    background-color: var(--white);
+}
+
+.service-area-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.service-area-text p {
+    margin-bottom: 1.5rem;
+}
+
+.service-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.area-tag {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--cream);
+    border: 1px solid var(--gold);
+    color: var(--charcoal);
+    font-size: var(--text-xs);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.service-area-image {
+    position: relative;
+    padding-bottom: 75%;
+    background-color: var(--beige);
+    width: 100%;
+}
+
+.service-area-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Values Section */
+.about-values {
+    background-color: var(--cream);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.value-card {
+    padding: 2.5rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+    border: 1px solid var(--beige);
+    transition: border-color 0.3s ease;
+}
+
+.value-card:active {
+    border-color: var(--gold);
+}
+
+.value-card h4 {
+    margin-bottom: 1rem;
+    color: var(--black);
+    font-size: var(--text-lg);
+}
+
+.value-card p {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+}
+
+/* About CTA */
+.about-cta {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 5%;
+}
+
+.about-cta h2 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.about-cta p {
+    color: var(--beige);
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+}
+
+/* ========================================
+   ABOUT PAGE RESPONSIVE
+   ======================================== */
+@media (min-width: 768px) {
+    /* Origin */
+    .origin-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .origin-image {
+        padding-bottom: 120%;
+    }
+
+    /* Team */
+    .team-member {
+        grid-template-columns: 300px 1fr;
+        gap: 3rem;
+    }
+
+    .team-photo {
+        padding-bottom: 120%;
+    }
+
+    /* Why Grid */
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    /* Difference */
+    .difference-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service Area */
+    .service-area-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .service-area-image {
+        padding-bottom: 100%;
+    }
+
+    /* Values */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Origin */
+    .origin-content {
+        gap: 5rem;
+    }
+
+    /* Team */
+    .team-member {
+        grid-template-columns: 350px 1fr;
+        gap: 4rem;
+    }
+
+    /* Why Grid */
+    .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Values */
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Hover Effects */
+    .value-card:hover {
+        border-color: var(--gold);
+    }
+}
+
+/* ========================================
    SERVICES PAGE SPECIFIC
    ======================================== */
 .service-detail {
