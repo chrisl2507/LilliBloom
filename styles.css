@@ -1,0 +1,565 @@
+/* ========================================
+   LilliBloom - Luxury Wedding Florals
+   Main Stylesheet
+   ======================================== */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #F5F3EF;
+    --beige: #E8E3DC;
+    --charcoal: #2C2C2C;
+    --black: #1A1A1A;
+    --gold: #C9A772;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   Navigation
+   ======================================== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1.5rem 5%;
+    border-bottom: 1px solid rgba(201, 167, 114, 0.2);
+}
+
+nav .nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--black);
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.4s ease;
+    border: 2px solid var(--black);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--black);
+}
+
+.btn-submit {
+    padding: 1rem 3rem;
+    background-color: var(--gold);
+    color: var(--black);
+    border: 2px solid var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.btn-submit:hover {
+    background-color: transparent;
+    color: var(--gold);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cream);
+    padding: 0 5%;
+    position: relative;
+}
+
+.hero-logo {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.hero-tagline {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--charcoal);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease 0.5s forwards;
+}
+
+.hero-subtitle {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--charcoal);
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease 1s forwards;
+}
+
+.hero .btn-primary {
+    opacity: 0;
+    animation: fadeIn 1.5s ease 1.5s forwards;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    opacity: 0.6;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   Section Styling
+   ======================================== */
+section {
+    padding: 8rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-subtitle {
+    color: var(--gold);
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* ========================================
+   About Section
+   ======================================== */
+.about {
+    background-color: var(--white);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+}
+
+.about-image {
+    position: relative;
+    padding-bottom: 125%;
+    background-color: var(--beige);
+}
+
+.about-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========================================
+   Services Section
+   ======================================== */
+.services {
+    background-color: var(--cream);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.service-card {
+    background-color: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.service-card p {
+    line-height: 1.8;
+    color: var(--charcoal);
+}
+
+/* ========================================
+   Gallery Section
+   ======================================== */
+.gallery {
+    background-color: var(--white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    padding-bottom: 100%;
+    background-color: var(--beige);
+    overflow: hidden;
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* ========================================
+   Testimonials
+   ======================================== */
+.testimonials {
+    background-color: var(--cream);
+}
+
+.testimonial-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-card {
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--charcoal);
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonial-author {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    font-weight: 500;
+}
+
+.testimonial-divider {
+    width: 60px;
+    height: 1px;
+    background-color: var(--gold);
+    margin: 0 auto 2rem;
+}
+
+/* ========================================
+   Contact Section
+   ======================================== */
+.contact {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    color: var(--beige);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--beige);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+footer {
+    background-color: var(--black);
+    color: var(--beige);
+    text-align: center;
+    padding: 3rem 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--white);
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-social a {
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.footer-social a:hover {
+    color: var(--gold);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 968px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        gap: 1.5rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-item:nth-child(1) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 5rem 5%;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
