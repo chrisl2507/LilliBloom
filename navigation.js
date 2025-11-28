@@ -88,27 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ========================================
-    // Form Submission (Placeholder)
+    // Form Submission - Netlify Forms Integration
     // ========================================
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(this);
-
-            // TODO: Replace this with your actual form handler
-            // For Netlify Forms, just remove e.preventDefault() and let it submit naturally
-            // For Formspree or other services, add your endpoint here
-
-            // Temporary success message
-            alert('Thank you for your inquiry! We\'ll be in touch soon.');
-            this.reset();
-
-            // For production with Netlify Forms:
-            // Just remove the e.preventDefault() and alert above
-            // The form will submit naturally to Netlify
-        });
-    }
+    // Netlify Forms will handle submission automatically
+    // No JavaScript intervention needed - form submits naturally
 });

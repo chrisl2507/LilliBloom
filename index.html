@@ -7,6 +7,38 @@
     <title>LilliBloom | Luxury Artificial Wedding Flowers Suffolk | Ipswich, Colchester, Cambridge</title>
     <meta name="description" content="Luxury artificial wedding florals in Suffolk. Beautiful, lasting bouquets & centerpieces at 40% less than fresh flowers. Serving Ipswich, Colchester, Bury St Edmunds, Cambridge. Book consultation.">
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://chrisl2507.github.io/LilliBloom/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="includes/Images/Logo-no-bg.png">
+    <link rel="apple-touch-icon" href="includes/Images/Logo-no-bg.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisl2507.github.io/LilliBloom/">
+    <meta property="og:title" content="LilliBloom | Luxury Artificial Wedding Flowers Suffolk">
+    <meta property="og:description" content="Luxury artificial wedding florals in Suffolk. Beautiful, lasting bouquets & centerpieces at 40% less than fresh flowers. Serving Ipswich, Colchester, Bury St Edmunds, Cambridge.">
+    <meta property="og:image" content="https://chrisl2507.github.io/LilliBloom/includes/Images/Top Table.jpg">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="LilliBloom">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://chrisl2507.github.io/LilliBloom/">
+    <meta name="twitter:title" content="LilliBloom | Luxury Artificial Wedding Flowers Suffolk">
+    <meta name="twitter:description" content="Luxury artificial wedding florals in Suffolk. Beautiful, lasting bouquets at 40% less than fresh flowers.">
+    <meta name="twitter:image" content="https://chrisl2507.github.io/LilliBloom/includes/Images/Top Table.jpg">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="GB-SFK">
+    <meta name="geo.placename" content="Suffolk">
+    <meta name="geo.position" content="52.056736;1.148390">
+    <meta name="ICBM" content="52.056736, 1.148390">
+    <meta name="keywords" content="artificial wedding flowers, wedding florals Suffolk, wedding bouquets Ipswich, wedding flowers Colchester, wedding centerpieces Cambridge, luxury wedding flowers, silk wedding flowers, artificial flower arrangements">
+    <meta name="author" content="LilliBloom">
+    <meta name="theme-color" content="#C9A772">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +46,77 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "LilliBloom",
+        "image": "https://chrisl2507.github.io/LilliBloom/includes/Images/Logo-no-bg.png",
+        "description": "Luxury artificial wedding florals in Suffolk. Beautiful, lasting bouquets & centerpieces at 40% less than fresh flowers.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Suffolk",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "52.056736",
+            "longitude": "1.148390"
+        },
+        "url": "https://chrisl2507.github.io/LilliBloom/",
+        "priceRange": "££",
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Ipswich"
+            },
+            {
+                "@type": "City",
+                "name": "Colchester"
+            },
+            {
+                "@type": "City",
+                "name": "Bury St Edmunds"
+            },
+            {
+                "@type": "City",
+                "name": "Cambridge"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Wedding Floral Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Bridal Bouquets",
+                        "description": "Exquisitely crafted bouquets designed to complement your style and vision"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Centerpieces",
+                        "description": "Stunning table arrangements that transform your reception"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Ceremony Decor",
+                        "description": "Arch installations, aisle arrangements, and altar pieces"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -45,11 +148,14 @@
 
 <!-- Hero Section -->
 <section class="hero">
-    <img src="includes/Images/Top Table.jpg"
-         alt="LilliBloom - Luxury Wedding Florals"
-         class="hero-logo"
-         loading="eager"
-         fetchpriority="high">
+    <picture>
+        <source srcset="includes/Images/Top Table.webp" type="image/webp">
+        <img src="includes/Images/Top Table.jpg"
+             alt="LilliBloom - Luxury Wedding Florals"
+             class="hero-logo"
+             loading="eager"
+             fetchpriority="high">
+    </picture>
 
     <div class="hero-tagline">Luxury Artificial Wedding Florals</div>
 
@@ -79,7 +185,10 @@
             </p>
         </div>
         <div class="about-image">
-            <img src="includes/Images/Centrepiece.jpg" height="822" width="769" alt="Luxury floral arrangement">
+            <picture>
+                <source srcset="includes/Images/Centrepiece.webp" type="image/webp">
+                <img src="includes/Images/Centrepiece.jpg" height="822" width="769" alt="Luxury floral arrangement">
+            </picture>
         </div>
     </div>
 </section>
@@ -151,15 +260,24 @@
 
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="includes/Images/Centrepiece1.jpg" height="1024" width="769" alt="Table centerpiece">
+            <picture>
+                <source srcset="includes/Images/Centrepiece1.webp" type="image/webp">
+                <img src="includes/Images/Centrepiece1.jpg" height="1024" width="769" alt="Table centerpiece">
+            </picture>
         </div>
 
         <div class="gallery-item">
-            <img src="includes/Images/Fireplace Flowers.jpg" height="1006" width="1512" alt="Ceremony decor">
+            <picture>
+                <source srcset="includes/Images/Fireplace Flowers.webp" type="image/webp">
+                <img src="includes/Images/Fireplace Flowers.jpg" height="1006" width="1512" alt="Ceremony decor">
+            </picture>
         </div>
 
         <div class="gallery-item">
-            <img src="includes/Images/Bridesmaid with Boquet.jpg" height="1046" width="1242" alt="Bridal bouquet detail">
+            <picture>
+                <source srcset="includes/Images/Bridesmaid with Boquet.webp" type="image/webp">
+                <img src="includes/Images/Bridesmaid with Boquet.jpg" height="1046" width="1242" alt="Bridal bouquet detail">
+            </picture>
         </div>
     </div>
 </section>
