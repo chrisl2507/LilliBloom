@@ -47,6 +47,10 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="includes/Images/Top%20Table.webp" type="image/webp">
+    <link rel="preload" as="image" href="includes/Images/Top%20Table.jpg" type="image/jpeg">
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -149,10 +153,14 @@
 <!-- Hero Section -->
 <section class="hero">
     <picture>
-        <source srcset="includes/Images/Top Table.webp" type="image/webp">
-        <img src="includes/Images/Top Table.jpg"
+        <source
+            srcset="includes/Images/Top%20Table.webp"
+            type="image/webp">
+        <img src="includes/Images/Top%20Table.jpg"
              alt="LilliBloom - Luxury Wedding Florals"
              class="hero-logo"
+             width="600"
+             height="600"
              loading="eager"
              fetchpriority="high">
     </picture>
@@ -187,7 +195,11 @@
         <div class="about-image">
             <picture>
                 <source srcset="includes/Images/Centrepiece.webp" type="image/webp">
-                <img src="includes/Images/Centrepiece.jpg" height="822" width="769" alt="Luxury floral arrangement">
+                <img src="includes/Images/Centrepiece.jpg"
+                     width="769"
+                     height="822"
+                     alt="Luxury floral arrangement"
+                     loading="lazy">
             </picture>
         </div>
     </div>
@@ -262,21 +274,33 @@
         <div class="gallery-item">
             <picture>
                 <source srcset="includes/Images/Centrepiece1.webp" type="image/webp">
-                <img src="includes/Images/Centrepiece1.jpg" height="1024" width="769" alt="Table centerpiece">
+                <img src="includes/Images/Centrepiece1.jpg"
+                     width="769"
+                     height="1024"
+                     alt="Table centerpiece"
+                     loading="lazy">
             </picture>
         </div>
 
         <div class="gallery-item">
             <picture>
-                <source srcset="includes/Images/Fireplace Flowers.webp" type="image/webp">
-                <img src="includes/Images/Fireplace Flowers.jpg" height="1006" width="1512" alt="Ceremony decor">
+                <source srcset="includes/Images/Fireplace%20Flowers.webp" type="image/webp">
+                <img src="includes/Images/Fireplace%20Flowers.jpg"
+                     width="1512"
+                     height="1006"
+                     alt="Ceremony decor"
+                     loading="lazy">
             </picture>
         </div>
 
         <div class="gallery-item">
             <picture>
-                <source srcset="includes/Images/Bridesmaid with Boquet.webp" type="image/webp">
-                <img src="includes/Images/Bridesmaid with Boquet.jpg" height="1046" width="1242" alt="Bridal bouquet detail">
+                <source srcset="includes/Images/Bridesmaid%20with%20Boquet.webp" type="image/webp">
+                <img src="includes/Images/Bridesmaid%20with%20Boquet.jpg"
+                     width="1242"
+                     height="1046"
+                     alt="Bridal bouquet detail"
+                     loading="lazy">
             </picture>
         </div>
     </div>

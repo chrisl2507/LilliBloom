@@ -57,6 +57,20 @@ img {
     display: block;
 }
 
+picture {
+    display: block;
+}
+
+/* Ensure images use object-fit for proper scaling */
+.hero-logo {
+    object-fit: contain;
+}
+
+.about-image img,
+.gallery-item img {
+    object-fit: cover;
+}
+
 /* ========================================
    TYPOGRAPHY
    ======================================== */
