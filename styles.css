@@ -791,6 +791,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 1rem;
     grid-auto-flow: dense;
+    grid-auto-rows: minmax(250px, auto);
 }
 
 .gallery-item-masonry {
@@ -800,6 +801,7 @@ footer {
     cursor: pointer;
     transition: transform 0.3s ease;
     -webkit-tap-highlight-color: transparent;
+    aspect-ratio: 4/5;
 }
 
 .gallery-item-masonry:active {
