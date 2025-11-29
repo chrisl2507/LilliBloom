@@ -335,10 +335,20 @@
         currentImageIndex = index;
         const item = visibleImages[index];
         const img = item.querySelector('img');
+        const picture = item.querySelector('picture');
         const title = item.getAttribute('data-title');
         const category = item.querySelector('.gallery-item-category').textContent;
 
-        lightboxImage.src = img.src;
+        // Try to get WebP source if available, otherwise fall back to img src
+        let imageSrc = img.src;
+        if (picture) {
+            const webpSource = picture.querySelector('source[type="image/webp"]');
+            if (webpSource && webpSource.srcset) {
+                imageSrc = webpSource.srcset;
+            }
+        }
+
+        lightboxImage.src = imageSrc;
         lightboxImage.alt = img.alt;
         lightboxTitle.textContent = title;
         lightboxCategory.textContent = category;
