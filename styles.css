@@ -871,19 +871,17 @@ footer {
 }
 
 .lightbox-content {
-    max-width: 95%;
-    max-height: 95%;
     position: relative;
+    display: inline-block;
 }
 
 .lightbox-content img {
     display: block;
     width: auto;
     height: auto;
-    max-width: 100%;
-    max-height: 85vh;
+    max-width: 90vw;
+    max-height: 80vh;
     object-fit: contain;
-    margin: 0 auto;
 }
 
 .lightbox-close {
