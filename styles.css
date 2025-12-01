@@ -2019,12 +2019,15 @@ footer {
 
 .blog-post-image {
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .blog-post-image img {
     width: 100%;
     height: auto;
+    max-height: 600px;
+    object-fit: cover;
     display: block;
 }
 
@@ -2035,7 +2038,7 @@ footer {
 }
 
 .blog-post-section {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .blog-post-section h2 {
@@ -2106,6 +2109,7 @@ footer {
     font-size: var(--text-xl);
     margin-bottom: 1rem;
     font-weight: 500;
+    color: var(--black);
 }
 
 .blog-post-cta p {
