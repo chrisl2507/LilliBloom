@@ -2038,19 +2038,19 @@ footer {
 }
 
 .blog-post-section {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+
+.blog-post-section + .blog-post-section {
+    margin-top: 2.5rem;
 }
 
 .blog-post-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: var(--text-xl);
-    margin: 2rem 0 1rem;
+    margin: 0 0 1rem;
     color: var(--black);
     font-weight: 500;
-}
-
-.blog-post-section:first-of-type h2 {
-    margin-top: 0;
 }
 
 .blog-post-section h3 {
