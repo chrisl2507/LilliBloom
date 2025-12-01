@@ -1848,7 +1848,7 @@ footer {
 /* Blog Hero */
 .blog-hero {
     text-align: center;
-    padding: 3rem 5% 2rem;
+    padding: 3rem 2% 1rem;
     background: var(--white);
     border-bottom: 1px solid var(--beige);
 }
@@ -1878,7 +1878,7 @@ footer {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 0.5rem;
 }
 
 .blog-card {
@@ -1927,7 +1927,7 @@ footer {
 }
 
 .blog-card-content {
-    padding: 2rem 2rem 2.5rem;
+    padding: 1rem 1rem 1.5rem;
 }
 
 .blog-card-meta {
@@ -1985,7 +1985,7 @@ footer {
 
 .blog-post-header {
     text-align: center;
-    padding: 3rem 5% 2rem;
+    padding: 2rem 2% 2rem;
     background: var(--white);
     width: 100%;
     max-width: 100%;
@@ -2024,14 +2024,14 @@ footer {
     margin-bottom: 1rem;
     line-height: 1.25;
     font-weight: 500;
-    max-width: 750px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .blog-post-intro {
     font-size: var(--text-base);
-    max-width: 650px;
+    max-width: 1000px;
     margin: 0 auto;
     color: var(--charcoal);
     line-height: 1.6;
@@ -2058,15 +2058,15 @@ footer {
 }
 
 .blog-post-content {
-    max-width: 750px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 3rem 5% 2rem;
+    padding: 2rem 2% 1rem;
     width: 100%;
     box-sizing: border-box;
 }
 
 .blog-post-section {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -2074,7 +2074,7 @@ footer {
 .blog-post-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: var(--text-xl);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-top: 0;
     color: var(--black);
     font-weight: 500;
@@ -2083,7 +2083,7 @@ footer {
 .blog-post-section h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: var(--text-lg);
-    margin: 1.75rem 0 0.5rem;
+    margin: 1rem 0 0.5rem;
     color: var(--charcoal);
     font-weight: 600;
 }
@@ -2091,7 +2091,7 @@ footer {
 .blog-post-section h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: var(--text-base);
-    margin: 1.25rem 0 0.5rem;
+    margin: 0.75rem 0 0.5rem;
     color: var(--charcoal);
     font-weight: 600;
 }
@@ -2099,13 +2099,13 @@ footer {
 .blog-post-section p {
     font-size: var(--text-base);
     line-height: 1.65;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.5rem;
     color: var(--charcoal);
 }
 
 .blog-post-section ul,
 .blog-post-section ol {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     padding-left: 1.5rem;
 }
@@ -2124,8 +2124,8 @@ footer {
 
 /* Blog Post Footer */
 .blog-post-footer {
-    max-width: 750px;
-    margin: 3rem auto 0;
+    max-width: 1000px;
+    margin: 1rem auto 0;
     padding: 0 5% 2rem;
     width: 100%;
     box-sizing: border-box;
