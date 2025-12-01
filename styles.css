@@ -2127,9 +2127,7 @@ footer {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--beige);
+    margin-bottom: 2.5rem;
 }
 
 .tag {
@@ -2146,34 +2144,39 @@ footer {
 
 .blog-post-cta {
     text-align: center;
-    padding: 3rem;
-    background: linear-gradient(135deg, var(--cream) 0%, var(--lightcream) 100%);
+    padding: 2.5rem 2rem;
+    background: var(--cream);
     border-radius: 8px;
+    border: 2px solid var(--beige);
 }
 
 .blog-post-cta h3 {
     font-family: 'Playfair Display', serif;
-    font-size: var(--text-2xl);
-    margin-bottom: 1rem;
+    font-size: var(--text-xl);
+    margin-bottom: 0.75rem;
 }
 
 .blog-post-cta p {
     font-size: var(--text-base);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--charcoal);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Related Posts */
 .blog-related {
-    background: var(--cream);
+    background: var(--white);
     padding: var(--section-padding-mobile);
+    border-top: 1px solid var(--beige);
 }
 
 .blog-related h2 {
     font-family: 'Playfair Display', serif;
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .blog-related-grid {
@@ -2185,28 +2188,30 @@ footer {
 }
 
 .blog-related-card {
-    background: var(--white);
-    padding: 2rem;
+    background: var(--cream);
+    padding: 1.75rem;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 1px solid var(--beige);
 }
 
 .blog-related-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    background: var(--white);
 }
 
 .blog-related-card a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 .blog-related-card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: var(--text-lg);
-    margin-bottom: 1rem;
+    font-size: var(--text-base);
+    margin-bottom: 0.75rem;
     color: var(--charcoal);
+    line-height: 1.4;
 }
 
 .blog-related-card .read-more {
@@ -2221,18 +2226,20 @@ footer {
 .blog-cta {
     text-align: center;
     padding: var(--section-padding-mobile);
-    background: linear-gradient(135deg, var(--cream) 0%, var(--lightcream) 100%);
+    background: var(--cream);
+    border-top: 1px solid var(--beige);
+    border-bottom: 1px solid var(--beige);
 }
 
 .blog-cta h2 {
-    font-size: var(--text-2xl);
-    margin-bottom: 1.5rem;
+    font-size: var(--text-xl);
+    margin-bottom: 1rem;
 }
 
 .blog-cta p {
-    font-size: var(--text-lg);
-    max-width: 700px;
-    margin: 0 auto 2rem;
+    font-size: var(--text-base);
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
     color: var(--charcoal);
 }
 
