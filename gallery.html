@@ -42,6 +42,10 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Preload critical gallery images -->
+    <link rel="preload" as="image" href="includes/Images/Boquet2.webp" type="image/webp">
+    <link rel="preload" as="image" href="includes/Images/Bridesmaid%20with%20Boquet.webp" type="image/webp">
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -123,7 +127,7 @@
             <div class="gallery-item-masonry" data-category="bouquets" data-title="Floral Bouquet" data-description="Classic bridal bouquet">
                 <picture>
                     <source srcset="includes/Images/Boquet2.webp" type="image/webp">
-                    <img src="includes/Images/Boquet2.png" width="621" height="523" alt="Floral bouquet" loading="lazy">
+                    <img src="includes/Images/Boquet2.png" width="621" height="523" alt="Floral bouquet" loading="eager" fetchpriority="high">
                 </picture>
                 <div class="gallery-item-overlay">
                     <div class="gallery-item-title">Floral Bouquet</div>
@@ -134,7 +138,7 @@
             <div class="gallery-item-masonry" data-category="bouquets" data-title="Romantic Bouquet" data-description="Classic bridal bouquet">
                 <picture>
                     <source srcset="includes/Images/Bridesmaid%20with%20Boquet.webp" type="image/webp">
-                    <img src="includes/Images/Bridesmaid%20with%20Boquet.jpg" width="1209" height="804" alt="Bridal bouquet with roses" loading="lazy">
+                    <img src="includes/Images/Bridesmaid%20with%20Boquet.jpg" width="1209" height="804" alt="Bridal bouquet with roses" loading="eager">
                 </picture>
                 <div class="gallery-item-overlay">
                     <div class="gallery-item-title">Romantic Bouquet</div>
@@ -145,7 +149,7 @@
             <div class="gallery-item-masonry" data-category="bouquets" data-title="Bridal Bouquet" data-description="Luxurious bridal bouquet">
                 <picture>
                     <source srcset="includes/Images/Boquet.webp" type="image/webp">
-                    <img src="includes/Images/Boquet.jpg" width="1195" height="1065" alt="Bridal bouquet" loading="lazy">
+                    <img src="includes/Images/Boquet.jpg" width="1195" height="1065" alt="Bridal bouquet" loading="eager">
                 </picture>
                 <div class="gallery-item-overlay">
                     <div class="gallery-item-title">Luxurious Bridal Bouquet</div>
