@@ -1685,10 +1685,6 @@ footer {
         gap: 1rem;
     }
 
-    .gallery-item-masonry:nth-child(3n+1) {
-        grid-row: span 2;
-    }
-
     /* Filter Buttons */
     .filter-buttons {
         justify-content: center;
