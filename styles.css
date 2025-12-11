@@ -1054,7 +1054,7 @@ footer {
 }
 
 /* ========================================
-   GALLERY PAGE SPECIFIC
+   GALLERY PAGE SPECIFIC - LUXURY ELEVATION
    ======================================== */
 .gallery-hero,
 .services-hero {
@@ -1064,28 +1064,53 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--cream);
-    padding: 6rem 5% 3rem;
+    background: linear-gradient(135deg,
+        var(--cream) 0%,
+        #F8F6F2 50%,
+        var(--cream) 100%);
+    padding: 8rem 5% 4rem;
     margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-hero::before,
+.services-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(201, 167, 114, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .gallery-hero p,
 .services-hero p {
-    max-width: 700px;
+    max-width: 750px;
     font-size: var(--text-base);
-    line-height: 1.8;
-    margin-top: 1rem;
+    line-height: 2;
+    margin-top: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    position: relative;
+    z-index: 1;
 }
 
-/* Filter Section */
+/* Filter Section - Luxury Elevation */
 .gallery-filters {
     background-color: var(--white);
-    padding: 2rem 5%;
+    padding: 2.5rem 5%;
     text-align: center;
-    border-bottom: 1px solid var(--beige);
+    border-bottom: 1px solid rgba(201, 167, 114, 0.15);
     position: sticky;
     top: 60px;
     z-index: 100;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .filter-buttons {
@@ -1107,32 +1132,56 @@ footer {
 }
 
 .filter-btn {
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: transparent;
-    border: 1px solid var(--charcoal);
+    border: 2px solid rgba(201, 167, 114, 0.3);
     color: var(--charcoal);
     font-family: 'Montserrat', sans-serif;
     font-size: var(--text-xs);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     white-space: nowrap;
-    min-height: 44px;
+    min-height: 48px;
     flex-shrink: 0;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
 }
 
+.filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gold);
+    transition: left 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+
+.filter-btn:hover::before,
+.filter-btn:active::before {
+    left: 0;
+}
+
+.filter-btn:hover,
 .filter-btn:active,
 .filter-btn.active {
-    background-color: var(--black);
-    color: var(--white);
-    border-color: var(--black);
+    background-color: var(--gold);
+    color: var(--black);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(201, 167, 114, 0.3);
 }
 
-/* Gallery Grid - Masonry */
+/* Gallery Grid - Masonry - Luxury Elevation */
 .gallery-main {
-    background-color: var(--cream);
-    padding: 3rem 5%;
+    background-color: var(--white);
+    padding: 4rem 5%;
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .gallery-container {
@@ -1150,15 +1199,17 @@ footer {
 .gallery-item-masonry {
     position: relative;
     overflow: hidden;
-    background-color: var(--beige);
+    background: linear-gradient(135deg, var(--beige) 0%, #EDE9E1 100%);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
     -webkit-tap-highlight-color: transparent;
     aspect-ratio: 4/5;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 .gallery-item-masonry:active {
-    transform: scale(0.98);
+    transform: scale(0.98) translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 .gallery-item-masonry picture {
@@ -1350,7 +1401,7 @@ footer {
 }
 
 /* ========================================
-   ABOUT PAGE SPECIFIC
+   ABOUT PAGE SPECIFIC - LUXURY ELEVATION
    ======================================== */
 .about-hero {
     min-height: 50vh;
@@ -1359,21 +1410,44 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--cream);
-    padding: 6rem 5% 3rem;
+    background: linear-gradient(135deg,
+        var(--cream) 0%,
+        #F8F6F2 50%,
+        var(--cream) 100%);
+    padding: 8rem 5% 4rem;
     margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(201, 167, 114, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .about-hero p {
-    max-width: 700px;
+    max-width: 750px;
     font-size: var(--text-base);
-    line-height: 1.8;
-    margin-top: 1rem;
+    line-height: 2;
+    margin-top: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    position: relative;
+    z-index: 1;
 }
 
-/* Origin Story */
+/* Origin Story - Luxury Elevation */
 .about-origin {
     background-color: var(--white);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .origin-content {
@@ -1403,9 +1477,10 @@ footer {
     object-fit: cover;
 }
 
-/* Team Section */
+/* Team Section - Luxury Elevation */
 .about-team {
-    background-color: var(--lightcream);
+    background-color: var(--cream);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .team-content {
@@ -1459,10 +1534,11 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-/* Why Artificial Section */
+/* Why Artificial Section - Luxury Elevation */
 .about-why {
     background-color: var(--white);
     text-align: center;
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .why-content h2 {
@@ -1505,9 +1581,10 @@ footer {
     line-height: 1.7;
 }
 
-/* What Makes Us Different */
+/* What Makes Us Different - Luxury Elevation */
 .about-difference {
     background-color: var(--cream);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .difference-content {
@@ -1532,9 +1609,10 @@ footer {
     line-height: 1.8;
 }
 
-/* Service Area */
+/* Service Area - Luxury Elevation */
 .about-service {
     background-color: var(--white);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .service-area-content {
@@ -1581,9 +1659,10 @@ footer {
     object-fit: cover;
 }
 
-/* Values Section */
+/* Values Section - Luxury Elevation */
 .about-values {
     background-color: var(--cream);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .values-grid {
@@ -1616,23 +1695,46 @@ footer {
     line-height: 1.7;
 }
 
-/* About CTA */
+/* About CTA - Luxury Elevation */
 .about-cta {
-    background-color: var(--black);
+    background: linear-gradient(135deg, #1A1A1A 0%, var(--black) 50%, #1A1A1A 100%);
     color: var(--white);
     text-align: center;
-    padding: 4rem 5%;
+    padding: 5rem 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(201, 167, 114, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .about-cta h2 {
     color: var(--white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
 }
 
 .about-cta p {
     color: var(--beige);
-    max-width: 700px;
-    margin: 0 auto 2.5rem;
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    line-height: 2;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    position: relative;
+    z-index: 1;
 }
 
 /* ========================================
@@ -1715,13 +1817,13 @@ footer {
 }
 
 /* ========================================
-   SERVICES PAGE SPECIFIC
+   SERVICES PAGE SPECIFIC - LUXURY ELEVATION
    ======================================== */
 .service-detail {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 4rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
 }
 
 .service-detail-image {
@@ -1778,9 +1880,10 @@ footer {
     font-weight: 600;
 }
 
-/* Process Section */
+/* Process Section - Luxury Elevation */
 .process {
-    background-color: var(--beige);
+    background-color: var(--cream);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .process-steps {
@@ -1817,9 +1920,10 @@ footer {
     line-height: 1.7;
 }
 
-/* Packages Section */
+/* Packages Section - Luxury Elevation */
 .packages {
-    background-color: var(--cream);
+    background-color: var(--white);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .packages-grid {
@@ -1895,9 +1999,10 @@ footer {
     width: 100%;
 }
 
-/* Add-ons Section */
+/* Add-ons Section - Luxury Elevation */
 .addons {
-    background-color: var(--white);
+    background-color: var(--cream);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .addons-grid {
@@ -1943,23 +2048,46 @@ footer {
     font-size: var(--text-sm);
 }
 
-/* CTA Section */
+/* CTA Section - Luxury Elevation */
 .cta-section {
-    background-color: var(--black);
+    background: linear-gradient(135deg, #1A1A1A 0%, var(--black) 50%, #1A1A1A 100%);
     color: var(--white);
     text-align: center;
-    padding: 4rem 5%;
+    padding: 5rem 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(201, 167, 114, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .cta-section h2 {
     color: var(--white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
 }
 
 .cta-section p {
     color: var(--beige);
-    max-width: 700px;
-    margin: 0 auto 2.5rem;
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    line-height: 2;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    position: relative;
+    z-index: 1;
 }
 
 /* ========================================
@@ -2223,15 +2351,34 @@ footer {
 }
 
 /* ========================================
-   BLOG STYLES
+   BLOG STYLES - LUXURY ELEVATION
    ======================================== */
 
-/* Blog Hero */
+/* Blog Hero - Luxury Elevation */
 .blog-hero {
     text-align: center;
-    padding: 3rem 2% 1rem;
-    background: var(--white);
-    border-bottom: 1px solid var(--beige);
+    padding: 6rem 5% 3rem;
+    background: linear-gradient(135deg,
+        var(--cream) 0%,
+        #F8F6F2 50%,
+        var(--cream) 100%);
+    border-bottom: 1px solid rgba(201, 167, 114, 0.15);
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(201, 167, 114, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .blog-hero h1 {
@@ -2247,10 +2394,11 @@ footer {
     color: var(--charcoal);
 }
 
-/* Blog Main Section */
+/* Blog Main Section - Luxury Elevation */
 .blog-main {
     padding: var(--section-padding-mobile);
     background: var(--white);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 /* Blog Card Grid */
@@ -2563,12 +2711,12 @@ footer {
     white-space: nowrap;
 }
 
-/* Blog CTA Section */
+/* Blog CTA Section - Luxury Elevation */
 .blog-cta {
     text-align: center;
-    padding: 4rem 5%;
+    padding: 5rem 5%;
     background: var(--cream);
-    border-top: 1px solid var(--beige);
+    border-top: 1px solid rgba(201, 167, 114, 0.15);
 }
 
 .blog-cta h2 {
