@@ -1,73 +1,95 @@
 // ========================================
-// LilliBloom — Navigation & Core JavaScript
+// LilliBloom - Navigation & Core JavaScript
 // ========================================
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
 
-    // ----- Mobile navigation -----
+    // ========================================
+    // Mobile Navigation Toggle
+    // ========================================
     const navToggle = document.querySelector('.nav-toggle');
-    const navPanel = document.querySelector('.nav-panel');
+    const navMenu = document.querySelector('nav ul');
     const navOverlay = document.querySelector('.nav-overlay');
-    const panelLinks = navPanel ? navPanel.querySelectorAll('a') : [];
+    const navLinks = document.querySelectorAll('nav ul a');
 
-    function openNav() {
-        navToggle.classList.add('active');
-        navPanel.classList.add('active');
-        navOverlay.classList.add('active');
-        navToggle.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
-    }
+    if (navToggle && navMenu && navOverlay) {
+        // Toggle menu
+        navToggle.addEventListener('click', function() {
+            const isOpen = navMenu.classList.contains('active');
 
-    function closeNav() {
-        if (!navToggle) return;
-        navToggle.classList.remove('active');
-        navPanel.classList.remove('active');
-        navOverlay.classList.remove('active');
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-    }
-
-    if (navToggle && navPanel && navOverlay) {
-        navToggle.addEventListener('click', function () {
-            if (navPanel.classList.contains('active')) {
+            if (isOpen) {
                 closeNav();
             } else {
                 openNav();
             }
         });
 
+        // Close menu when clicking overlay
         navOverlay.addEventListener('click', closeNav);
 
-        panelLinks.forEach(link => {
-            link.addEventListener('click', closeNav);
+        // Close menu when clicking a nav link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 768) {
+                    closeNav();
+                }
+            });
         });
 
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && navPanel.classList.contains('active')) {
+        // Close menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
                 closeNav();
             }
         });
+
+        function openNav() {
+            navToggle.classList.add('active');
+            navMenu.classList.add('active');
+            navOverlay.classList.add('active');
+            navToggle.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeNav() {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
     }
 
-    // ----- Smooth scrolling for in-page anchors -----
+    // ========================================
+    // Smooth Scrolling for Anchor Links
+    // ========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
+
+            // Don't prevent default for just '#' links
             if (href === '#') return;
 
             const target = document.querySelector(href);
-            if (!target) return;
+            if (target) {
+                e.preventDefault();
 
-            e.preventDefault();
-            const nav = document.querySelector('nav');
-            const navHeight = nav ? nav.offsetHeight : 0;
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-            window.scrollTo({
-                top: targetPosition - navHeight - 16,
-                behavior: 'smooth'
-            });
+                // Calculate offset for fixed nav
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = targetPosition - navHeight - 20;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 
-    // Netlify handles form submission natively. No JS interception.
+    // ========================================
+    // Form Submission - Netlify Forms Integration
+    // ========================================
+    // Netlify Forms will handle submission automatically
+    // No JavaScript intervention needed - form submits naturally
 });
