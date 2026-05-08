@@ -26,11 +26,11 @@
     <meta name="twitter:image" content="https://lillibloom.com/includes/Images/fireplace-flowers.jpg">
 
     <meta name="author" content="LilliBloom">
-    <meta name="theme-color" content="#F5F3EF">
+    <meta name="theme-color" content="#FBF8F4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500&family=Italiana&family=Pinyon+Script&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -54,10 +54,11 @@
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
 
+<!-- Navigation -->
 <nav>
     <div class="nav-container">
         <a href="index.html" class="logo-link" aria-label="LilliBloom — Home">
-            <img src="includes/Images/logo.webp" alt="LilliBloom" width="160" height="48">
+            <img src="includes/Images/logo.webp" alt="LilliBloom" width="160" height="42">
         </a>
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
@@ -65,7 +66,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="blog.html">Journal</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#contact">Book a Consultation</a></li>
         </ul>
         <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-panel">
             <span></span><span></span><span></span>
@@ -81,17 +82,17 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="blog.html">Journal</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Book a Consultation</a></li>
     </ul>
 </aside>
 
 <main id="main">
 
-<section class="gallery-hero">
-    <div class="gallery-hero-inner">
+<section class="page-hero">
+    <div class="page-hero-inner">
         <span class="eyebrow">Gallery</span>
         <h1>A small portfolio.</h1>
-        <p>A selection of bouquets, centerpieces and installations from recent weddings.</p>
+        <p class="lede">A selection of bouquets, centerpieces and installations from recent weddings.</p>
     </div>
 </section>
 
@@ -107,68 +108,65 @@
 
 <section class="gallery-main">
     <div class="gallery-container">
-        <div class="gallery-empty">
-            <p>No arrangements in this category yet.</p>
-        </div>
-
+        <div class="gallery-empty"><p>No arrangements in this category yet.</p></div>
         <div class="gallery-grid-masonry" id="galleryGrid">
 
-            <article class="gallery-item-masonry" data-category="bouquets" data-title="Floral Bouquet" data-description="Cream and ivory bridal bouquet">
+            <article class="gallery-item-masonry" data-category="bouquets" data-title="Cream Bridal Bouquet">
                 <picture>
                     <source srcset="includes/Images/bouquet-2.webp" type="image/webp">
-                    <img src="includes/Images/bouquet-2.png" alt="Cream and ivory bridal bouquet" width="621" height="523" loading="eager" fetchpriority="high">
+                    <img src="includes/Images/bouquet-2.png" alt="Cream and ivory bridal bouquet" width="800" height="1000" loading="eager" fetchpriority="high">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Bridal bouquet</span>
+                    <span>Cream Bridal Bouquet</span>
                     <span class="gallery-item-category">Bouquets</span>
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="bouquets" data-title="Romantic Posy" data-description="Bridesmaid posy">
+            <article class="gallery-item-masonry" data-category="bouquets" data-title="Bridesmaid Posy">
                 <picture>
                     <source srcset="includes/Images/bridesmaid-with-bouquet.webp" type="image/webp">
                     <img src="includes/Images/bridesmaid-with-bouquet.jpg" alt="Bridesmaid carrying a soft posy" width="1209" height="804" loading="eager">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Bridal-party posy</span>
+                    <span>Bridesmaid Posy</span>
                     <span class="gallery-item-category">Bouquets</span>
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="bouquets" data-title="Bridal Bouquet" data-description="Soft, romantic bridal bouquet">
+            <article class="gallery-item-masonry" data-category="bouquets" data-title="Romantic Bridal">
                 <picture>
                     <source srcset="includes/Images/bouquet.webp" type="image/webp">
-                    <img src="includes/Images/bouquet.jpg" alt="Soft, romantic bridal bouquet" width="1195" height="1065" loading="eager">
+                    <img src="includes/Images/bouquet.jpg" alt="Soft romantic bridal bouquet" width="1195" height="1065" loading="eager">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Bridal bouquet</span>
+                    <span>Romantic Bridal</span>
                     <span class="gallery-item-category">Bouquets</span>
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="centerpieces" data-title="Tablescape Centerpiece" data-description="Tall elegant centerpiece">
+            <article class="gallery-item-masonry" data-category="centerpieces" data-title="Footed Centerpiece">
                 <picture>
                     <source srcset="includes/Images/centrepiece.webp" type="image/webp">
                     <img src="includes/Images/centrepiece.jpg" alt="Cream centerpiece in a footed vessel" width="769" height="822" loading="lazy">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Centerpiece</span>
+                    <span>Footed Centerpiece</span>
                     <span class="gallery-item-category">Centerpieces</span>
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="centerpieces" data-title="Centerpiece Detail" data-description="Romantic table piece">
+            <article class="gallery-item-masonry" data-category="centerpieces" data-title="Centerpiece Detail">
                 <picture>
                     <source srcset="includes/Images/centrepiece-detail.webp" type="image/webp">
                     <img src="includes/Images/centrepiece-detail.jpg" alt="Detail of a romantic centerpiece" width="769" height="1024" loading="lazy">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Centerpiece detail</span>
+                    <span>Centerpiece Detail</span>
                     <span class="gallery-item-category">Centerpieces</span>
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="centerpieces" data-title="Tablescape" data-description="Cream and ivory tablescape">
+            <article class="gallery-item-masonry" data-category="centerpieces" data-title="Tablescape">
                 <picture>
                     <source srcset="includes/Images/table-topper.webp" type="image/webp">
                     <img src="includes/Images/table-topper.jpg" alt="Cream and ivory tablescape" width="1512" height="1006" loading="lazy">
@@ -179,35 +177,35 @@
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="ceremony" data-title="Mantel Florals" data-description="Mantel arrangement">
+            <article class="gallery-item-masonry" data-category="ceremony" data-title="Mantel Florals">
                 <picture>
                     <source srcset="includes/Images/fireplace-flowers.webp" type="image/webp">
                     <img src="includes/Images/fireplace-flowers.jpg" alt="Mantel arrangement of cream blooms" width="1512" height="1006" loading="lazy">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Mantel piece</span>
+                    <span>Mantel Florals</span>
                     <span class="gallery-item-category">Ceremony</span>
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="installations" data-title="Top Table Runner" data-description="Top-table installation">
+            <article class="gallery-item-masonry" data-category="installations" data-title="Top Table Runner">
                 <picture>
                     <source srcset="includes/Images/top-table.webp" type="image/webp">
-                    <img src="includes/Images/top-table.jpg" alt="Long top-table runner with cream blooms" width="5583" height="3715" loading="lazy">
+                    <img src="includes/Images/top-table.jpg" alt="Long top-table runner" width="5583" height="3715" loading="lazy">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Top-table runner</span>
+                    <span>Top Table Runner</span>
                     <span class="gallery-item-category">Installations</span>
                 </div>
             </article>
 
-            <article class="gallery-item-masonry" data-category="installations" data-title="Cake Florals" data-description="Cake florals">
+            <article class="gallery-item-masonry" data-category="installations" data-title="Cake Florals">
                 <picture>
                     <source srcset="includes/Images/cake-flowers.webp" type="image/webp">
                     <img src="includes/Images/cake-flowers.jpg" alt="Floral accents on a wedding cake" width="1006" height="1512" loading="lazy">
                 </picture>
                 <div class="gallery-item-meta">
-                    <span>Cake florals</span>
+                    <span>Cake Florals</span>
                     <span class="gallery-item-category">Installations</span>
                 </div>
             </article>
@@ -216,7 +214,6 @@
     </div>
 </section>
 
-<!-- Lightbox -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
     <div class="lightbox-content">
         <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
@@ -234,11 +231,12 @@
     <span class="eyebrow">Inspired</span>
     <h2>Let's talk about your florals.</h2>
     <p>Each piece you see here was made for one wedding. Yours would be made for one too.</p>
-    <a href="index.html#contact" class="text-link">Begin a Consultation</a>
+    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
 </section>
 
 </main>
 
+<!-- Footer -->
 <footer>
     <div class="footer-content">
         <div class="footer-logo">LilliBloom</div>
@@ -348,5 +346,6 @@
         else if (e.key === 'ArrowRight') showLightboxImage(currentIndex + 1);
     });
 </script>
+
 </body>
 </html>

@@ -26,11 +26,11 @@
     <meta name="twitter:image" content="https://lillibloom.com/includes/Images/centrepiece-detail.jpg">
 
     <meta name="author" content="LilliBloom">
-    <meta name="theme-color" content="#F5F3EF">
+    <meta name="theme-color" content="#FBF8F4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500&family=Italiana&family=Pinyon+Script&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -66,10 +66,11 @@
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
 
+<!-- Navigation -->
 <nav>
     <div class="nav-container">
         <a href="index.html" class="logo-link" aria-label="LilliBloom — Home">
-            <img src="includes/Images/logo.webp" alt="LilliBloom" width="160" height="48">
+            <img src="includes/Images/logo.webp" alt="LilliBloom" width="160" height="42">
         </a>
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
@@ -77,7 +78,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="blog.html">Journal</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#contact">Book a Consultation</a></li>
         </ul>
         <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-panel">
             <span></span><span></span><span></span>
@@ -93,30 +94,30 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="blog.html">Journal</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Book a Consultation</a></li>
     </ul>
 </aside>
 
 <main id="main">
 
-<section class="services-hero">
-    <div class="services-hero-inner">
+<section class="page-hero">
+    <div class="page-hero-inner">
         <span class="eyebrow">Services</span>
         <h1>Florals built around your day.</h1>
-        <p>Every commission begins with a conversation about your venue, your dress, and what you want the room to feel like.</p>
+        <p class="lede">Every commission begins with a conversation about your venue, your dress, and what you want the room to feel like.</p>
     </div>
 </section>
 
-<!-- Detailed services -->
-<section class="service-detail">
+<section id="bouquets" class="service-detail">
     <div class="service-detail-inner">
         <div class="service-detail-image">
             <picture>
                 <source srcset="includes/Images/bridesmaid-with-bouquet.webp" type="image/webp">
-                <img src="includes/Images/bridesmaid-with-bouquet.jpg" alt="Soft, romantic bridal bouquet held in front of a linen dress" width="1209" height="1511" loading="lazy">
+                <img src="includes/Images/bridesmaid-with-bouquet.jpg" alt="Soft, romantic bridal bouquet" width="1209" height="1511" loading="lazy">
             </picture>
         </div>
         <div class="service-detail-content">
+            <span class="eyebrow">Bouquets</span>
             <h3>Bridal Bouquets</h3>
             <span class="price-range">From £95</span>
             <p>A bouquet you'll carry down the aisle and put on your mantelpiece. We design with your dress, your venue, and your hands in mind.</p>
@@ -131,15 +132,16 @@
     </div>
 </section>
 
-<section class="service-detail reverse">
-    <div class="service-detail-inner">
+<section id="centerpieces" class="service-detail">
+    <div class="service-detail-inner reverse">
         <div class="service-detail-image">
             <picture>
                 <source srcset="includes/Images/centrepiece-detail.webp" type="image/webp">
-                <img src="includes/Images/centrepiece-detail.jpg" alt="Cream and ivory centerpiece in a footed glass vessel" width="769" height="1024" loading="lazy">
+                <img src="includes/Images/centrepiece-detail.jpg" alt="Cream and ivory centerpiece" width="769" height="1024" loading="lazy">
             </picture>
         </div>
         <div class="service-detail-content">
+            <span class="eyebrow">Reception</span>
             <h3>Centerpieces</h3>
             <span class="price-range">From £110 per arrangement</span>
             <p>Reception tables that hold their own — low and intimate, or tall and architectural. We design across the room rather than per table.</p>
@@ -153,15 +155,16 @@
     </div>
 </section>
 
-<section class="service-detail">
+<section id="ceremony" class="service-detail">
     <div class="service-detail-inner">
         <div class="service-detail-image">
             <picture>
                 <source srcset="includes/Images/fireplace-flowers.webp" type="image/webp">
-                <img src="includes/Images/fireplace-flowers.jpg" alt="Mantel arrangement of cream blooms and trailing greenery" width="1512" height="1006" loading="lazy">
+                <img src="includes/Images/fireplace-flowers.jpg" alt="Mantel arrangement of cream blooms" width="1512" height="1006" loading="lazy">
             </picture>
         </div>
         <div class="service-detail-content">
+            <span class="eyebrow">Ceremony</span>
             <h3>Ceremony Decor</h3>
             <span class="price-range">From £175</span>
             <p>Arches, altar pieces, aisle markers, and fireplace florals. Built to look right from the back of the room and from the photographer's lens.</p>
@@ -175,15 +178,16 @@
     </div>
 </section>
 
-<section class="service-detail reverse">
-    <div class="service-detail-inner">
+<section id="installations" class="service-detail">
+    <div class="service-detail-inner reverse">
         <div class="service-detail-image">
             <picture>
                 <source srcset="includes/Images/top-table.webp" type="image/webp">
-                <img src="includes/Images/top-table.jpg" alt="Long top-table installation with running greenery and cream blooms" width="5583" height="3715" loading="lazy">
+                <img src="includes/Images/top-table.jpg" alt="Long top-table installation" width="5583" height="3715" loading="lazy">
             </picture>
         </div>
         <div class="service-detail-content">
+            <span class="eyebrow">Statement</span>
             <h3>Statement Installations</h3>
             <span class="price-range">Custom Pricing</span>
             <p>Top-table runners, sweetheart-table backdrops, and large entrance pieces — the moments people photograph. Designed venue-by-venue.</p>
@@ -197,171 +201,141 @@
     </div>
 </section>
 
-<!-- Process -->
 <section class="process">
-    <div class="process-inner">
-        <span class="eyebrow">How It Works</span>
-        <h2>Four steps, beginning to delivery.</h2>
-
-        <div class="process-step">
-            <div class="process-number">01</div>
-            <div class="process-content">
-                <h4>Consultation.</h4>
-                <p>We talk through your venue, dress, palette, and the feeling you want. Bring inspiration; we'll ask the practical questions.</p>
-            </div>
-        </div>
-
-        <div class="process-step">
-            <div class="process-number">02</div>
-            <div class="process-content">
-                <h4>Proposal.</h4>
-                <p>A short written proposal: what we'd make, how it'd sit in the room, and the cost. We adjust until it's right.</p>
-            </div>
-        </div>
-
-        <div class="process-step">
-            <div class="process-number">03</div>
-            <div class="process-content">
-                <h4>Make.</h4>
-                <p>We build everything in the studio, by hand. You see samples and progress along the way.</p>
-            </div>
-        </div>
-
-        <div class="process-step">
-            <div class="process-number">04</div>
-            <div class="process-content">
-                <h4>Deliver and set up.</h4>
-                <p>Pieces arrive at your venue ready to go. We set up, take a final look, and step away.</p>
-            </div>
-        </div>
+    <div class="section-header">
+        <span class="eyebrow">How it works</span>
+        <h2>From first chat to delivery.</h2>
+        <p>Four steps, each clearly explained.</p>
+    </div>
+    <div class="cards-grid cols-4">
+        <article class="process-card">
+            <div class="process-numeral">01</div>
+            <h4>Consultation</h4>
+            <p>We talk through your venue, dress, palette, and the feeling you want. Bring inspiration; we'll ask the practical questions.</p>
+        </article>
+        <article class="process-card">
+            <div class="process-numeral">02</div>
+            <h4>Proposal</h4>
+            <p>A short written proposal: what we'd make, how it'd sit in the room, and the cost. We adjust until it's right.</p>
+        </article>
+        <article class="process-card">
+            <div class="process-numeral">03</div>
+            <h4>Make</h4>
+            <p>We build everything in the studio, by hand. You see samples and progress along the way.</p>
+        </article>
+        <article class="process-card">
+            <div class="process-numeral">04</div>
+            <h4>Deliver and set up</h4>
+            <p>Pieces arrive at your venue ready to go. We set up, take a final look, and step away.</p>
+        </article>
     </div>
 </section>
 
-<!-- Packages -->
 <section class="packages">
-    <div class="packages-inner">
-        <div class="packages-header">
-            <span class="eyebrow">Collections</span>
-            <h2>Three starting points.</h2>
-            <p>Most weddings begin from one of these three and adjust from there.</p>
-        </div>
-        <div class="packages-grid">
-
-            <div class="package">
-                <h3>Intimate</h3>
-                <div class="package-price">From £1,400</div>
-                <p class="package-tagline">For micro-weddings and smaller celebrations.</p>
-                <ul class="package-features">
-                    <li>1 bridal bouquet</li>
-                    <li>2 bridesmaid posies</li>
-                    <li>2 buttonholes</li>
-                    <li>4 table centerpieces</li>
-                    <li>1 ceremony focal piece</li>
-                    <li>Consultation and design</li>
-                </ul>
-                <a href="index.html#contact" class="text-link">Enquire</a>
-            </div>
-
-            <div class="package featured">
-                <span class="package-marker">Signature</span>
-                <h3>Signature</h3>
-                <div class="package-price">From £2,200</div>
-                <p class="package-tagline">Our most-requested package for full celebrations.</p>
-                <ul class="package-features">
-                    <li>1 bridal bouquet</li>
-                    <li>4 bridesmaid posies</li>
-                    <li>5 buttonholes</li>
-                    <li>10 table centerpieces</li>
-                    <li>Ceremony arch installation</li>
-                    <li>Sweetheart-table arrangement</li>
-                    <li>Priority consultation</li>
-                </ul>
-                <a href="index.html#contact" class="text-link">Enquire</a>
-            </div>
-
-            <div class="package">
-                <h3>Grand</h3>
-                <div class="package-price">From £3,200</div>
-                <p class="package-tagline">Full-room florals for grand celebrations.</p>
-                <ul class="package-features">
-                    <li>1 bridal bouquet</li>
-                    <li>6 bridesmaid posies</li>
-                    <li>8 buttonholes</li>
-                    <li>15 table centerpieces</li>
-                    <li>Large ceremony installation</li>
-                    <li>Entrance statement piece</li>
-                    <li>Multiple reception installations</li>
-                    <li>VIP design experience</li>
-                </ul>
-                <a href="index.html#contact" class="text-link">Enquire</a>
-            </div>
-
-        </div>
+    <div class="section-header">
+        <span class="eyebrow">Collections</span>
+        <h2>Three starting points.</h2>
+        <p>Most weddings begin from one of these and adjust from there.</p>
+    </div>
+    <div class="cards-grid cols-3">
+        <article class="package-card">
+            <h3>Intimate</h3>
+            <div class="package-price">From £1,400</div>
+            <p class="package-tagline">For micro-weddings and smaller celebrations.</p>
+            <ul class="package-features">
+                <li>1 bridal bouquet</li>
+                <li>2 bridesmaid posies</li>
+                <li>2 buttonholes</li>
+                <li>4 table centerpieces</li>
+                <li>1 ceremony focal piece</li>
+                <li>Consultation and design</li>
+            </ul>
+            <a href="index.html#contact" class="btn-primary">Enquire</a>
+        </article>
+        <article class="package-card featured">
+            <span class="package-marker">Most loved</span>
+            <h3>Signature</h3>
+            <div class="package-price">From £2,200</div>
+            <p class="package-tagline">Our most-requested package for full celebrations.</p>
+            <ul class="package-features">
+                <li>1 bridal bouquet</li>
+                <li>4 bridesmaid posies</li>
+                <li>5 buttonholes</li>
+                <li>10 table centerpieces</li>
+                <li>Ceremony arch installation</li>
+                <li>Sweetheart-table arrangement</li>
+                <li>Priority consultation</li>
+            </ul>
+            <a href="index.html#contact" class="btn-primary">Enquire</a>
+        </article>
+        <article class="package-card">
+            <h3>Grand</h3>
+            <div class="package-price">From £3,200</div>
+            <p class="package-tagline">Full-room florals for grand celebrations.</p>
+            <ul class="package-features">
+                <li>1 bridal bouquet</li>
+                <li>6 bridesmaid posies</li>
+                <li>8 buttonholes</li>
+                <li>15 table centerpieces</li>
+                <li>Large ceremony installation</li>
+                <li>Entrance statement piece</li>
+                <li>Multiple reception installations</li>
+                <li>VIP design experience</li>
+            </ul>
+            <a href="index.html#contact" class="btn-primary">Enquire</a>
+        </article>
     </div>
 </section>
 
-<!-- Add-ons -->
 <section class="addons">
-    <div class="addons-inner">
+    <div class="section-header">
         <span class="eyebrow">Additions</span>
         <h2>Pieces to add.</h2>
-        <ul class="addons-list">
-            <li class="addon">
-                <div>
-                    <span class="addon-title">Floral Crown</span>
-                    <span class="addon-price">From £60</span>
-                </div>
-                <p class="addon-desc">A delicate headpiece for brides, bridesmaids, or flower girls.</p>
-            </li>
-            <li class="addon">
-                <div>
-                    <span class="addon-title">Cake Flowers</span>
-                    <span class="addon-price">From £45</span>
-                </div>
-                <p class="addon-desc">Soft floral accents for the wedding cake, designed to your palette.</p>
-            </li>
-            <li class="addon">
-                <div>
-                    <span class="addon-title">Corsages</span>
-                    <span class="addon-price">From £45 each</span>
-                </div>
-                <p class="addon-desc">Wrist or pin corsages for mothers and special guests.</p>
-            </li>
-            <li class="addon">
-                <div>
-                    <span class="addon-title">Signage Florals</span>
-                    <span class="addon-price">From £75</span>
-                </div>
-                <p class="addon-desc">Floral accents for welcome signs, seating charts, and order-of-the-day boards.</p>
-            </li>
-            <li class="addon">
-                <div>
-                    <span class="addon-title">Floral Hoop Wreaths</span>
-                    <span class="addon-price">From £225</span>
-                </div>
-                <p class="addon-desc">Circular ceremony backdrops or photo-area wreaths.</p>
-            </li>
-            <li class="addon">
-                <div>
-                    <span class="addon-title">Preservation Service</span>
-                    <span class="addon-price">From £295</span>
-                </div>
-                <p class="addon-desc">Your bouquet finished in a custom display case for your home.</p>
-            </li>
-        </ul>
+    </div>
+    <div class="cards-grid cols-3">
+        <article class="card addon-card">
+            <h4>Floral Crown</h4>
+            <span class="addon-price">From £60</span>
+            <p>A delicate headpiece for brides, bridesmaids, or flower girls.</p>
+        </article>
+        <article class="card addon-card">
+            <h4>Cake Flowers</h4>
+            <span class="addon-price">From £45</span>
+            <p>Soft floral accents for the wedding cake, designed to your palette.</p>
+        </article>
+        <article class="card addon-card">
+            <h4>Corsages</h4>
+            <span class="addon-price">From £45 each</span>
+            <p>Wrist or pin corsages for mothers and special guests.</p>
+        </article>
+        <article class="card addon-card">
+            <h4>Signage Florals</h4>
+            <span class="addon-price">From £75</span>
+            <p>Floral accents for welcome signs, seating charts, and order-of-the-day boards.</p>
+        </article>
+        <article class="card addon-card">
+            <h4>Floral Hoop Wreaths</h4>
+            <span class="addon-price">From £225</span>
+            <p>Circular ceremony backdrops or photo-area wreaths.</p>
+        </article>
+        <article class="card addon-card">
+            <h4>Preservation Service</h4>
+            <span class="addon-price">From £295</span>
+            <p>Your bouquet finished in a custom display case for your home.</p>
+        </article>
     </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-section">
-    <span class="eyebrow">Ready to Begin</span>
+    <span class="eyebrow">Ready to begin</span>
     <h2>Let's design your florals.</h2>
     <p>Send a few details about your venue and date — we'll be in touch to set up a consultation.</p>
-    <a href="index.html#contact" class="text-link">Begin a Consultation</a>
+    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
 </section>
 
 </main>
 
+<!-- Footer -->
 <footer>
     <div class="footer-content">
         <div class="footer-logo">LilliBloom</div>

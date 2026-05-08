@@ -30,11 +30,11 @@
     <meta name="geo.position" content="52.056736;1.148390">
     <meta name="ICBM" content="52.056736, 1.148390">
     <meta name="author" content="LilliBloom">
-    <meta name="theme-color" content="#F5F3EF">
+    <meta name="theme-color" content="#FBF8F4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500&family=Italiana&family=Pinyon+Script&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -112,28 +112,23 @@
 <nav>
     <div class="nav-container">
         <a href="index.html" class="logo-link" aria-label="LilliBloom — Home">
-            <img src="includes/Images/logo.webp" alt="LilliBloom" width="160" height="48">
+            <img src="includes/Images/logo.webp" alt="LilliBloom" width="160" height="42">
         </a>
-
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="blog.html">Journal</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#contact">Book a Consultation</a></li>
         </ul>
-
         <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-panel">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </button>
     </div>
 </nav>
 
 <div class="nav-overlay" aria-hidden="true"></div>
-
 <aside class="nav-panel" id="nav-panel" aria-label="Mobile navigation">
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -141,7 +136,7 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="blog.html">Journal</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#contact">Book a Consultation</a></li>
     </ul>
 </aside>
 
@@ -151,12 +146,13 @@
 <section class="hero">
     <div class="hero-inner">
         <div class="hero-text">
-            <img src="includes/Images/logo.webp" alt="" class="hero-mark" width="240" height="240" loading="eager" fetchpriority="high">
-            <span class="hero-tagline">Suffolk · Cambridgeshire · Essex</span>
-            <h1 class="hero-headline">Wedding florals,<br><em>kept forever.</em></h1>
-            <span class="hero-script" aria-hidden="true">— with love, from the studio</span>
-            <p class="hero-sub">Bespoke artificial bouquets, centerpieces and ceremony pieces, hand-crafted in Suffolk by Esme — former set designer at the Royal Opera House, Covent Garden.</p>
-            <a href="#contact" class="text-link">Begin a Consultation</a>
+            <span class="eyebrow">Suffolk · Cambridgeshire · Essex</span>
+            <h1>Wedding florals, kept forever.</h1>
+            <p class="lede">Bespoke artificial bouquets, centerpieces and ceremony pieces, hand-crafted in Suffolk by Esme — former set designer at the Royal Opera House, Covent Garden.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">Book a Consultation</a>
+                <a href="services.html" class="btn-secondary">Explore Services</a>
+            </div>
         </div>
         <div class="hero-image">
             <picture>
@@ -167,63 +163,110 @@
     </div>
 </section>
 
-<!-- Sprig divider -->
-<div class="sprig-divider" aria-hidden="true">
-    <img src="includes/Images/sprig.svg" alt="">
-</div>
+<!-- Services preview -->
+<section class="services-preview">
+    <div class="section-header">
+        <span class="eyebrow">What we make</span>
+        <h2>Florals built around your day.</h2>
+        <p>Three core services, each designed to your dress, your venue, and the way you want the room to feel.</p>
+    </div>
+    <div class="cards-grid cols-3">
+        <article class="card service-preview-card">
+            <div class="card-image">
+                <picture>
+                    <source srcset="includes/Images/bouquet.webp" type="image/webp">
+                    <img src="includes/Images/bouquet.jpg" alt="Soft cream bridal bouquet" width="800" height="600" loading="lazy">
+                </picture>
+            </div>
+            <h3>Bridal Bouquets</h3>
+            <p>A bouquet you'll carry down the aisle and put on your mantelpiece. From £95.</p>
+            <a href="services.html#bouquets" class="text-link">Learn more</a>
+        </article>
+        <article class="card service-preview-card">
+            <div class="card-image">
+                <picture>
+                    <source srcset="includes/Images/centrepiece-detail.webp" type="image/webp">
+                    <img src="includes/Images/centrepiece-detail.jpg" alt="Cream and ivory centerpiece" width="800" height="600" loading="lazy">
+                </picture>
+            </div>
+            <h3>Centerpieces</h3>
+            <p>Reception tables that hold their own. Low and intimate, or tall and architectural. From £110.</p>
+            <a href="services.html#centerpieces" class="text-link">Learn more</a>
+        </article>
+        <article class="card service-preview-card">
+            <div class="card-image">
+                <picture>
+                    <source srcset="includes/Images/fireplace-flowers.webp" type="image/webp">
+                    <img src="includes/Images/fireplace-flowers.jpg" alt="Mantel arrangement of cream blooms" width="800" height="600" loading="lazy">
+                </picture>
+            </div>
+            <h3>Ceremony Decor</h3>
+            <p>Arches, altar pieces, aisle markers, and fireplace florals. From £175.</p>
+            <a href="services.html#ceremony" class="text-link">Learn more</a>
+        </article>
+    </div>
+</section>
 
 <!-- Story -->
-<section class="story">
-    <div class="story-inner">
-        <div class="story-image">
-            <picture>
-                <source srcset="includes/Images/centrepiece.webp" type="image/webp">
-                <img src="includes/Images/centrepiece.jpg" alt="Cream and ivory floral centerpiece in a footed vessel" width="769" height="960" loading="lazy">
-            </picture>
-        </div>
-        <div class="story-text">
+<section class="split">
+    <div class="split-inner image-right">
+        <div class="split-text">
             <span class="eyebrow">Our Story</span>
             <h2>Florals, kept forever.</h2>
             <p>LilliBloom began with a bride's own wedding — and the discovery that artificial florals, made with care, can hold the day exactly as it was. No wilting. No worry. A bouquet that becomes a keepsake.</p>
             <p>We work by appointment, in small numbers, with one principle: every arrangement is the only one we're making that week.</p>
-            <a href="about.html" class="text-link">Read more →</a>
+            <a href="about.html" class="text-link">Read our story</a>
+        </div>
+        <div class="split-image">
+            <picture>
+                <source srcset="includes/Images/centrepiece.webp" type="image/webp">
+                <img src="includes/Images/centrepiece.jpg" alt="Cream floral centerpiece in a footed vessel" width="769" height="960" loading="lazy">
+            </picture>
         </div>
     </div>
 </section>
 
 <!-- Selected Work -->
 <section class="selected">
-    <div class="selected-inner">
-        <div class="selected-header">
-            <span class="eyebrow">Selected Work</span>
-            <h2>A small portfolio.</h2>
-        </div>
-        <div class="selected-grid">
-            <figure class="selected-item selected-item-1">
+    <div class="section-header">
+        <span class="eyebrow">Selected Work</span>
+        <h2>A small portfolio.</h2>
+        <p>A glance at recent weddings across Suffolk and beyond.</p>
+    </div>
+    <div class="cards-grid cols-3">
+        <article class="card selected-card">
+            <div class="card-image">
                 <picture>
                     <source srcset="includes/Images/top-table.webp" type="image/webp">
-                    <img src="includes/Images/top-table.jpg" alt="Top-table runner of cream blooms and trailing greenery" width="1600" height="2133" loading="lazy">
+                    <img src="includes/Images/top-table.jpg" alt="Top-table runner of cream blooms" width="800" height="1067" loading="lazy">
                 </picture>
-                <figcaption class="selected-caption">Top-table installation <span class="sage">· Suffolk barn</span></figcaption>
-            </figure>
-            <figure class="selected-item selected-item-2">
+            </div>
+            <div class="selected-card-caption">Top-table installation</div>
+            <div class="selected-card-meta">Suffolk barn</div>
+        </article>
+        <article class="card selected-card">
+            <div class="card-image">
                 <picture>
-                    <source srcset="includes/Images/bouquet.webp" type="image/webp">
-                    <img src="includes/Images/bouquet.jpg" alt="Soft cream bridal bouquet" width="1195" height="1195" loading="lazy">
+                    <source srcset="includes/Images/bridesmaid-with-bouquet.webp" type="image/webp">
+                    <img src="includes/Images/bridesmaid-with-bouquet.jpg" alt="Bridesmaid carrying a soft posy" width="800" height="1067" loading="lazy">
                 </picture>
-                <figcaption class="selected-caption">Bridal bouquet <span class="sage">· May wedding</span></figcaption>
-            </figure>
-            <figure class="selected-item selected-item-3">
+            </div>
+            <div class="selected-card-caption">Bridal-party posies</div>
+            <div class="selected-card-meta">Spring wedding</div>
+        </article>
+        <article class="card selected-card">
+            <div class="card-image">
                 <picture>
                     <source srcset="includes/Images/fireplace-flowers.webp" type="image/webp">
-                    <img src="includes/Images/fireplace-flowers.jpg" alt="Mantel arrangement of cream blooms and trailing greenery" width="1512" height="945" loading="lazy">
+                    <img src="includes/Images/fireplace-flowers.jpg" alt="Mantel arrangement of cream blooms" width="800" height="1067" loading="lazy">
                 </picture>
-                <figcaption class="selected-caption">Mantel piece <span class="sage">· country house</span></figcaption>
-            </figure>
-        </div>
-        <div class="selected-cta">
-            <a href="gallery.html" class="text-link">View the full portfolio →</a>
-        </div>
+            </div>
+            <div class="selected-card-caption">Mantel piece</div>
+            <div class="selected-card-meta">Country house</div>
+        </article>
+    </div>
+    <div class="center-cta">
+        <a href="gallery.html" class="btn-secondary">View the full portfolio</a>
     </div>
 </section>
 
@@ -235,39 +278,35 @@
             <h2>Tell us about your day.</h2>
             <p>We work by appointment with a small number of weddings each season. Send a few details about your venue and date, and we'll be in touch.</p>
         </div>
-        <form class="contact-form" name="contact" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact">
-            <p class="sr-only">
-                <label>Don't fill this out: <input name="bot-field"></label>
-            </p>
-
-            <div class="form-group">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="date">Wedding date</label>
-                <input type="date" id="date" name="date">
-            </div>
-
-            <div class="form-group">
-                <label for="venue">Venue / location</label>
-                <input type="text" id="venue" name="venue">
-            </div>
-
-            <div class="form-group">
-                <label for="message">A few details</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Send Enquiry</button>
-        </form>
+        <div class="contact-form-card">
+            <form class="contact-form" name="contact" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="sr-only">
+                    <label>Don't fill this out: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Wedding date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="venue">Venue / location</label>
+                    <input type="text" id="venue" name="venue">
+                </div>
+                <div class="form-group">
+                    <label for="message">A few details</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Enquiry</button>
+            </form>
+        </div>
     </div>
 </section>
 
